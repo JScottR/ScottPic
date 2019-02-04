@@ -7,7 +7,7 @@ import Contact from "./Components/contact";
 import Blog from "./Components/blog";
 import error from "./Components/error";
 import Navigation from "./Components/navigation";
-
+import './App.css';
 
 
 
