@@ -8,6 +8,7 @@ import Blog from "./Components/blog";
 import error from "./Components/error";
 import Navigation from "./Components/navigation";
 import './App.css';
+import GalleryView from './Components/GalleryView';
 
 
 
@@ -20,7 +21,8 @@ class App extends Component {
         <Navigation/>
         <Switch>
           <Route path="/" component={Home} exact/>
-          <Route path="/gallery" component={Gallery}/>
+          <Route exact path="/gallery" component={Gallery}/>
+          <Route path="/gallery/:id" component={GalleryView}/>
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact}/>
           <Route path="/blog" component={Blog}/>
